@@ -25,7 +25,7 @@ class Order extends Model
     }
 
     /**
-     * Hubungan ke OrderItems: Satu pesanan punya banyak item donat
+     * Hubungan ke OrderItems: Satu pesanan punya banyak item
      */
     public function items(): HasMany
     {

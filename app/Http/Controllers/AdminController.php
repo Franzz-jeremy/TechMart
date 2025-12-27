@@ -17,7 +17,7 @@ class AdminController extends Controller
         // 2. Jumlah Pesanan yang perlu diproses (pending & processing)
         $pendingOrders = Order::whereIn('status', ['pending', 'processing'])->count();
 
-        // 3. Total Produk Donat yang terdaftar
+        // 3. Total Produk  yang terdaftar
         $totalProducts = Product::count();
 
         // 4. Total Pelanggan (User dengan role 'user')
